@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
 <header class="header">
   <div class="container nav">
     <div class="logo">Himalaya Momo</div>
     <nav>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="menu.html">Menu</a></li>
@@ -24,53 +26,99 @@
   </div>
 </header>
 
-<section class="section">
+<main class="section">
   <div class="container">
-    <h1>Horaires & Contacts</h1>
+    <div class="hours-intro">
+      <div>
+        <h1>Horaires & Contacts</h1>
+        <p class="section-intro">
+          Retrouvez ici les horaires et coordonnées de nos deux adresses à Neuchâtel.
+          N’hésitez pas à nous appeler pour commander à l’avance ou vérifier le service.
+        </p>
+      </div>
+      <div class="hours-badges">
+        <span class="badge">Deux adresses</span>
+        <span class="badge">Sur place & à emporter</span>
+        <span class="badge badge-accent">Cuisine tibétaine</span>
+      </div>
+    </div>
 
     <div class="hours-grid">
 
-      <!-- RESTAURANT PRINCIPAL -->
       <div class="hours-card">
-        <h2>Restaurant – Lallemand</h2>
+        <div class="hours-card-header">
+          <h2>Restaurant – Lallemand</h2>
+          <span class="tag">Principal</span>
+        </div>
+        <p class="hours-subtitle">Service midi & soir</p>
 
-        <h3>Horaires</h3>
-        <p>Lundi au Jeudi :<br> 09:30 – 15:00 / 17:30 – 21:00</p>
-        <p>Vendredi au Samedi :<br> 09:30 – 15:00 / 17:30 – 22:00</p>
-        <p>Dimanche : fermé</p>
+        <div class="hours-block">
+          <h3>Horaires</h3>
+          <ul>
+            <li><strong>Lundi au Jeudi</strong><br>09:30 – 15:00 / 17:30 – 21:00</li>
+            <li><strong>Vendredi au Samedi</strong><br>09:30 – 15:00 / 17:30 – 22:00</li>
+            <li><strong>Dimanche</strong> : fermé</li>
+          </ul>
+        </div>
 
-        <h3>Adresse</h3>
-        <p>Rue Jean-Jacques-Lallemand 7<br>2000 Neuchâtel</p>
+        <div class="hours-block">
+          <h3>Adresse</h3>
+          <p>Rue Jean-Jacques-Lallemand 7<br>2000 Neuchâtel</p>
+          <a class="btn-ghost" href="https://maps.google.com/?q=Himalaya+Momo+Rue+Jean-Jacques-Lallemand+7+Neuchâtel" target="_blank">
+            Itinéraire Google Maps
+          </a>
+        </div>
 
-        <h3>Contact</h3>
-        <p>Téléphone : <a href="tel:+41325554660">032 555 46 60</a></p>
-        <p>Email : <a href="mailto:himalayamomo.ne@gmail.com">himalayamomo.ne@gmail.com</a></p>
+        <div class="hours-block">
+          <h3>Contact</h3>
+          <p>Téléphone : <a href="tel:+41325554660">032 555 46 60</a></p>
+          <p>Email : <a href="mailto:himalayamomo.ne@gmail.com">himalayamomo.ne@gmail.com</a></p>
+        </div>
       </div>
 
-      <!-- RESTAURANT CENTRE-VILLE -->
       <div class="hours-card">
-        <h2>Restaurant – Centre-ville</h2>
+        <div class="hours-card-header">
+          <h2>Restaurant – Centre-ville</h2>
+          <span class="tag tag-light">Service midi</span>
+        </div>
+        <p class="hours-subtitle">Idéal pour la pause de midi</p>
 
-        <h3>Horaires</h3>
-        <p>Lundi au Vendredi :<br> 11:45 – 14:30</p>
-        <p>Samedi :<br> 11:45 – 15:00</p>
-        <p>Dimanche : fermé</p>
+        <div class="hours-block">
+          <h3>Horaires</h3>
+          <ul>
+            <li><strong>Lundi au Vendredi</strong><br>11:45 – 14:30</li>
+            <li><strong>Samedi</strong><br>11:45 – 15:00</li>
+            <li><strong>Dimanche</strong> : fermé</li>
+          </ul>
+        </div>
 
-        <h3>Adresse</h3>
-        <p>Rue des Moulins 7<br>2000 Neuchâtel</p>
+        <div class="hours-block">
+          <h3>Adresse</h3>
+          <p>Rue des Moulins 7<br>2000 Neuchâtel</p>
+          <a class="btn-ghost" href="https://maps.google.com/?q=Himalaya+Momo+Rue+des+Moulins+7+Neuchâtel" target="_blank">
+            Itinéraire Google Maps
+          </a>
+        </div>
 
-        <h3>Contact</h3>
-        <p>Téléphone : <a href="tel:+41325011959">032 501 19 59</a></p>
-        <p>Email : <a href="mailto:himalayamomo.ne@gmail.com">himalayamomo.ne@gmail.com</a></p>
+        <div class="hours-block">
+          <h3>Contact</h3>
+          <p>Téléphone : <a href="tel:+41325011959">032 501 19 59</a></p>
+          <p>Email : <a href="mailto:himalayamomo.ne@gmail.com">himalayamomo.ne@gmail.com</a></p>
+        </div>
       </div>
 
     </div>
+
+    <div class="hours-note">
+      <p>Les horaires peuvent varier les jours fériés. Appelez-nous pour confirmer le service.</p>
+    </div>
   </div>
-</section>
+</main>
 
 <footer>
   <p>© 2026 Himalaya Momo – Neuchâtel</p>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
