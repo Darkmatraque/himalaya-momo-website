@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+
 <header class="header">
   <div class="container nav">
     <div class="logo">Himalaya Momo</div>
     <nav>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a class="active" href="menu.html">Menu</a></li>
@@ -23,34 +26,75 @@
   </div>
 </header>
 
-<section class="section">
+<main class="section">
   <div class="container">
     <h1>Menu</h1>
+    <p class="section-intro">
+      Voici un aperçu de nos spécialités. Les plats et prix peuvent varier légèrement
+      selon la saison et le service.
+    </p>
 
-    <h2>Momos vapeur</h2>
-    <ul class="menu-list">
-      <li>Momos bœuf (8 pcs) — <strong>CHF 16.–</strong></li>
-      <li>Momos végétariens (8 pcs) — <strong>CHF 15.–</strong></li>
-    </ul>
+    <div class="menu-section">
+      <h2>Momos vapeur</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>Momos bœuf</h3>
+          <ul class="menu-items">
+            <li><span>8 pièces</span><span>CHF 16.–</span></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Momos végétariens</h3>
+          <ul class="menu-items">
+            <li><span>8 pièces</span><span>CHF 15.–</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <h2>Momos frits</h2>
-    <ul class="menu-list">
-      <li>Momos frits bœuf — <strong>CHF 17.–</strong></li>
-      <li>Momos frits végétariens — <strong>CHF 16.–</strong></li>
-    </ul>
+    <div class="menu-section">
+      <h2>Momos frits</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>Momos frits bœuf</h3>
+          <ul class="menu-items">
+            <li><span>8 pièces</span><span>CHF 17.–</span></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Momos frits végétariens</h3>
+          <ul class="menu-items">
+            <li><span>8 pièces</span><span>CHF 16.–</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <h2>Soupes & plats</h2>
-    <ul class="menu-list">
-      <li>Soupe tibétaine — <strong>CHF 18.–</strong></li>
-      <li>Plat du jour — <strong>CHF 22.–</strong></li>
-    </ul>
+    <div class="menu-section">
+      <h2>Soupes & plats</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>Soupe tibétaine</h3>
+          <ul class="menu-items">
+            <li><span>Bol généreux</span><span>CHF 18.–</span></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Plat du jour</h3>
+          <ul class="menu-items">
+            <li><span>Selon inspiration</span><span>CHF 22.–</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
   </div>
-</section>
+</main>
 
 <footer>
   <p>© 2026 Himalaya Momo – Neuchâtel</p>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
