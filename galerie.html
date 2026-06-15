@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+
 <header class="header">
   <div class="container nav">
     <div class="logo">Himalaya Momo</div>
     <nav>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="menu.html">Menu</a></li>
@@ -23,21 +26,25 @@
   </div>
 </header>
 
-<section class="section">
+<main class="section">
   <div class="container">
     <h1>Galerie</h1>
+    <p class="section-intro">
+      Quelques images de nos momos, de nos plats et de l’ambiance dans nos restaurants.
+    </p>
 
-    <div class="gallery">
-      <img src="assets/img/momo1.jpg">
-      <img src="assets/img/momo2.jpg">
-      <img src="assets/img/resto.jpg">
+    <div class="gallery-grid">
+      <img src="assets/img/momo1.jpg" alt="Assiette de momos">
+      <img src="assets/img/momo2.jpg" alt="Momos vapeur">
+      <img src="assets/img/resto.jpg" alt="Intérieur du restaurant">
     </div>
   </div>
-</section>
+</main>
 
 <footer>
   <p>© 2026 Himalaya Momo – Neuchâtel</p>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
