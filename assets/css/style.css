@@ -114,3 +114,41 @@ footer {
   background: #f3e4d7;
   margin-top: 2rem;
 }
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hours-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e6d6c8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.hours-card h2 {
+  color: #d35400;
+  margin-bottom: 1rem;
+}
+
+.hours-card h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #3a2f2a;
+}
+
+.hours-card p {
+  margin: 0.3rem 0;
+  color: #5a4a42;
+}
+
+.hours-card a {
+  color: #d35400;
+  text-decoration: none;
+  font-weight: bold;
+}
+
