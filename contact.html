@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+
 <header class="header">
   <div class="container nav">
     <div class="logo">Himalaya Momo</div>
     <nav>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="menu.html">Menu</a></li>
@@ -23,25 +26,51 @@
   </div>
 </header>
 
-<section class="section">
+<main class="section">
   <div class="container">
     <h1>Contact</h1>
+    <p class="section-intro">
+      Une question, une réservation de groupe ou une demande spéciale ?
+      Écrivez-nous ou appelez directement l’un de nos restaurants.
+    </p>
 
-    <p>Téléphone : <a href="tel:+41325554660">+41 32 555 46 60</a></p>
-    <p>Email : <a href="mailto:contact@himalaya-momo.ch">contact@himalaya-momo.ch</a></p>
+    <div class="contact-layout">
+      <form class="contact-form">
+        <div class="field">
+          <label for="name">Nom</label>
+          <input id="name" type="text" placeholder="Votre nom">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Votre email">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Votre message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Nom">
-      <input type="email" placeholder="Email">
-      <textarea placeholder="Message"></textarea>
-      <button class="btn">Envoyer</button>
-    </form>
+      <div class="contact-info">
+        <h2>Coordonnées</h2>
+        <p><strong>Restaurant – Lallemand</strong><br>Rue Jean-Jacques-Lallemand 7<br>2000 Neuchâtel<br>
+          Tél : <a href="tel:+41325554660">032 555 46 60</a></p>
+
+        <p><strong>Restaurant – Centre-ville</strong><br>Rue des Moulins 7<br>2000 Neuchâtel<br>
+          Tél : <a href="tel:+41325011959">032 501 19 59</a></p>
+
+        <p><strong>Email :</strong><br>
+          <a href="mailto:himalayamomo.ne@gmail.com">himalayamomo.ne@gmail.com</a>
+        </p>
+      </div>
+    </div>
   </div>
-</section>
+</main>
 
 <footer>
   <p>© 2026 Himalaya Momo – Neuchâtel</p>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
